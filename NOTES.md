@@ -1,4 +1,4 @@
-### What do we want to do?
+# StudyDate app
 
 
 ### Overview:
@@ -7,20 +7,20 @@ An application that has a little personality! You can create questions for study
 
 
 ### Features
-Create Questions (Submit Form)
-Answer Questions (Submit Form)
-Load Questions (DOMContentLoaded)
-Button to accept AI statement (click)
-Positive Reinforcement
-Score at the end of the Questions
+* Create Questions (Submit Form)
+* Answer Questions (Submit Form)
+* Load Questions (DOMContentLoaded)
+* Button to accept AI statement (click)
+* Positive Reinforcement
+* Score at the end of the Questions
 
 
 ### MVP
-Create Questions (Submit Form)
-Answer Questions (Submit Form)
-Load Questions (DOMContentLoaded)
-Button to accept AI statement (click)
-Positive Reinforcement
+* Create Questions (Submit Form)
+* Answer Questions (Submit Form)
+* Load Questions (DOMContentLoaded)
+* Button to accept AI statement (click)
+* Positive Reinforcement
 
 ### Stretch
 Score at the end of the Questions
