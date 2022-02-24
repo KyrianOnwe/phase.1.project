@@ -36,22 +36,32 @@ const homePageTemp = () => {
 const testPageTemp = () => {
   return ``
 }
-const anatPageTemp = () => {
+const studyPageTemp = () => {
   return `
-  <div class="container row">
-    <div class="container col s3">
-      <form class="center-align">
-        <label for="ansr">Answer:</label><br>
-        <input type="text" id="ansr" name="ansr"><br>
-      </form>
-    </div>
+    <div class="container row">
+      <div class="container col s3">
+        <form class="center-align">
+          <div class="container>
+            <label for="ansr">Answer:</label><br>
+            <input type="text" id="ansr"      name="ansr"><br>
+            <span>
+              <input type="button" class="button" id="submit">I'm sure<br>
+            </span>
+          </div>
+        </form>
+        </div>
 
-    <div class="col s9">
-      <!-- Teal page content  -->
+      <div class="col s4 teal lighten-5">
+      </div>
+      
+      <div class="col s5 teal lighten-5">
+        <div class="container" id="question-side">
+            <h1>Hi There</h1>
+        </div>
+      </div>
     </div>
-  </div>
-  
-`
+    
+  `
 }
 
 
@@ -64,7 +74,12 @@ const testRenderHome = () => {
   mainDiv().innerHTML = testPageTemp();
 }
 const renderAnatPg = () => {
-  mainDiv().innerHTML = anatPageTemp();
+  mainDiv().innerHTML = studyPageTemp();
+  interject();
+}
+
+function interject(){
+  document.querySelector('#question-side').innerHTML = `<h1>Yo Jo!</h1>`
 }
 /** When DOM is loaded **/
 document.addEventListener('DOMContentLoaded', () => {
