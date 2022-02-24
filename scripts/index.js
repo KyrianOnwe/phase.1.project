@@ -40,16 +40,12 @@ const studyPageTemp = () => {
   return `
     <div class="container row">
       <div class="container col s3">
-        <form class="center-align">
-          <div class="container>
-            <label for="ansr">Answer:</label><br>
-            <input type="text" id="ansr"      name="ansr"><br>
-            <span>
-              <input type="button" class="button" id="submit">I'm sure<br>
-            </span>
-          </div>
+        <form action="/action_page.php" id="response-submit">
+          <label for="lname">The response:</label><br>
+          <input type="text" id="lname" name="lname" value=""><br><br>
+          <input type="submit" value="Submit">
         </form>
-        </div>
+      </div>
 
       <div class="col s4 teal lighten-5">
       </div>
@@ -76,6 +72,8 @@ const testRenderHome = () => {
 const renderAnatPg = () => {
   mainDiv().innerHTML = studyPageTemp();
   interject();
+  handleResponse()
+
 }
 
 function interject(){
@@ -109,5 +107,11 @@ function anatPgJump(){
   })
 }
 
+function handleResponse(){
+  let handler = document.getElementById("response-submit");
+  handler.addEventListener('submit', (e) => {
+    e.preventDefault();
+  })
+}
 
 /**********************************/
