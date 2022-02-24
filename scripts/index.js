@@ -1,4 +1,6 @@
 /** Globals **/
+const baseUrl = 'http://localhost:3000';
+let testData = [];
 
 
 /** Node Getters **/
