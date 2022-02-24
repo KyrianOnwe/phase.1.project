@@ -22,7 +22,7 @@ const homePageTemp = () => {
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <p>Choose a subject above.  No fooling around until you're good and smart!!</p>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
@@ -36,6 +36,23 @@ const homePageTemp = () => {
 const testPageTemp = () => {
   return ``
 }
+const anatPageTemp = () => {
+  return `
+  <div class="container row">
+    <div class="container col s3">
+      <form class="center-align">
+        <label for="ansr">Answer:</label><br>
+        <input type="text" id="ansr" name="ansr"><br>
+      </form>
+    </div>
+
+    <div class="col s9">
+      <!-- Teal page content  -->
+    </div>
+  </div>
+  
+`
+}
 
 
 /** Renderers **/
@@ -46,12 +63,15 @@ const renderHome = () => {
 const testRenderHome = () => {
   mainDiv().innerHTML = testPageTemp();
 }
-
+const renderAnatPg = () => {
+  mainDiv().innerHTML = anatPageTemp();
+}
 /** When DOM is loaded **/
 document.addEventListener('DOMContentLoaded', () => {
   renderHome();
   homePageJump();
   testPageJump();
+  anatPgJump();
 })
 
 
@@ -68,7 +88,11 @@ function testPageJump(){
 
   })
 }
-
+function anatPgJump(){
+  anatPg().addEventListener('click', () => {
+    renderAnatPg();
+  })
+}
 
 
 /**********************************/
