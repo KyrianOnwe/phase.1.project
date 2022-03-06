@@ -145,6 +145,8 @@ function handleResponse(){
     let retort = document.getElementById('response-bar').value;
     chatBox(retort);
     chatCheck(retort);
+    chatInputReset();
+
 
   })
 }
