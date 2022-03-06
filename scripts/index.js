@@ -57,6 +57,20 @@ const studyPageTemp = () => {
 const renderHome = () => {
   mainDiv().innerHTML = homePageTemp();
 }
+
+function initialChatGF(){
+  let igf = document.createElement('div')
+  igf.className = 'col s6 m6';
+  igf.innerHTML = `
+  <div class="card white">
+  <div class="card-content white-text">
+    <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span>Are you ready?</p>
+  </div>
+  </div>
+  `
+document.querySelector("#row2").appendChild(igf);
+}
+
     //TEST
 const testRenderHome = () => {
   mainDiv().innerHTML = testPageTemp();
