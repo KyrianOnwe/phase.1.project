@@ -120,7 +120,6 @@ document.querySelector("#row2").appendChild(igf);
 }
 
 function chatGF(current= questNumb, array = testData){
-  
   let gF = document.createElement('div')
   gF.className = 'col s6 m6';
   gF.innerHTML = `
@@ -130,7 +129,6 @@ function chatGF(current= questNumb, array = testData){
    </div>
   </div>
   `
-  
   document.querySelector("#row2").appendChild(gF);
 }
 
@@ -207,17 +205,16 @@ function reinforce(){
   }
 }
 
-function flirt(){
-  let igf = document.createElement('div')
-  igf.className = 'col s6 m6';
-  igf.innerHTML = `
+function flirt(current= questNumb, array = testData){
+  let gF = document.createElement('div')
+  gF.className = 'col s6 m6';
+  gF.innerHTML = `
   <div class="card white">
-  <div class="card-content white-text">
-    <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span>Big brains are SO SEXY!</p>
-  </div>
+   <div class="card-content white-text">
+     <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span>Big brains are SO hot!  Let's keep going: ${array[current].question}</p>
+   </div>
   </div>
   `
-document.querySelector("#row2").appendChild(igf);
-
+  document.querySelector("#row2").appendChild(gF);
 }
 /**********************************/
