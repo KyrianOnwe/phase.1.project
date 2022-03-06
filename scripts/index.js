@@ -52,6 +52,20 @@ const studyPageTemp = () => {
       `
 }
 
+function chatBox(submission){
+  let chatSham = document.createElement('div')
+  chatSham.className = "col offset-s6 offset-m6 s6 m6"
+  chatSham.innerHTML = `
+  <div class="card grey lighten-1">
+    <div class="card-content white-text">
+      <p class="blue-text text-darken-1" style="line-height: 18px;"><span class="black-text">We Say:</span> ${submission}</p>
+    </div>
+  </div>
+  `
+  document.querySelector("#row2").appendChild(chatSham)
+
+}
+
 
 /** Renderers **/
 const renderHome = () => {
