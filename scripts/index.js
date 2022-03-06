@@ -190,4 +190,9 @@ function getData(){
   .then(data => writeDataTable(data))  
 }
 
+function writeDataTable(pic){
+  let listCopy = [pic, ...testData];
+  return testData = listCopy[0];
+}
+
 /**********************************/
