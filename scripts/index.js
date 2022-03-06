@@ -184,5 +184,8 @@ function handleResponse(){
 
 
 /** Server calls **/
+function getData(){
+  
+}
 
 /**********************************/
