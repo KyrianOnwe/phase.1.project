@@ -17,12 +17,12 @@ const homePageTemp = () => {
   <h1 class="center-align">Welcome to your study date!</h1>
   <div class="container" id="modal-container">
     <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Choose a subject above.  No fooling around until you're good and smart!!</a>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Make your choice above.  Let's STUDY!</a>
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Modal Header</h4>
-        <p>Choose a subject above.  No fooling around until you're good and smart!!</p>
+        <p>Make your choice above.  Let's STUDY!</p>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
