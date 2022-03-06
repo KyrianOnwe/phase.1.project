@@ -107,6 +107,14 @@ const renderHome = () => {
   mainDiv().innerHTML = homePageTemp();
 }
 
+const renderAnatPg = () => {
+  mainDiv().innerHTML = ''
+  mainDiv().className = 'row'
+  mainDiv().innerHTML = studyPageTemp();
+  setTimeout(initialChatGF, 2500)
+  handleResponse()
+}
+
 /** This is how she will ask questions **/
 function initialChatGF(){
   let igf = document.createElement('div')
@@ -134,13 +142,6 @@ function chatGF(current= questNumb, array = testData){
   document.querySelector("#row2").appendChild(gF);
 }
 
-const renderAnatPg = () => {
-  mainDiv().innerHTML = ''
-  mainDiv().className = 'row'
-  mainDiv().innerHTML = studyPageTemp();
-  setTimeout(initialChatGF, 2500)
-  handleResponse()
-}
 
 /** When DOM is loaded **/
 document.addEventListener('DOMContentLoaded', () => {
