@@ -177,6 +177,7 @@ function handleResponse(){
     chatInputReset();
     chatQuestUpd();
     showScore();
+    chatGF()
 
 
 
