@@ -77,14 +77,10 @@ const renderAnatPg = () => {
   mainDiv().innerHTML = ''
   mainDiv().className = 'row'
   mainDiv().innerHTML = studyPageTemp();
-  interject();
   handleResponse()
 
 }
 
-function interject(){
-  document.querySelector('#question-side').innerHTML = `<h1>Yo Jo!</h1>`
-}
 /** When DOM is loaded **/
 document.addEventListener('DOMContentLoaded', () => {
   renderHome();
