@@ -178,10 +178,11 @@ function handleResponse(){
     chatQuestUpd();
     showScore();
     setTimeout(chatGF, 7500);
-
-
-
   })
 }
+
+
+
+/** Server calls **/
 
 /**********************************/
