@@ -111,8 +111,8 @@ function anatPgJump(){
 }
 
 function handleResponse(){
-  let handler = document.getElementById("response-submit");
-  handler.addEventListener('submit', (e) => {
+  let handler = document.getElementById("submit");
+  handler.addEventListener('click', (e) => {
     e.preventDefault();
   })
 }
