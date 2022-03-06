@@ -71,10 +71,7 @@ function initialChatGF(){
 document.querySelector("#row2").appendChild(igf);
 }
 
-    //TEST
-const testRenderHome = () => {
-  mainDiv().innerHTML = testPageTemp();
-}
+
 const renderAnatPg = () => {
   mainDiv().innerHTML = studyPageTemp();
   interject();
