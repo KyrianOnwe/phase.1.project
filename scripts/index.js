@@ -200,7 +200,7 @@ function writeDataTable(pic){
 /** Positive reinforcement **/
 function reinforce(){
   if (parseInt(numbCorrect) == 3){
-    setTimeout(flirt, 2000)
+    //setTimeout(flirt, 2000)
     setTimeout(chatGF, 7500)
   } else {
     setTimeout(chatGF, 5500)
