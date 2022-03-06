@@ -144,9 +144,9 @@ const renderAnatPg = () => {
 
 /** When DOM is loaded **/
 document.addEventListener('DOMContentLoaded', () => {
+  getData();
   renderHome();
   homePageJump();
-  testPageJump();
   anatPgJump();
 })
 
@@ -195,7 +195,7 @@ function writeDataTable(pic){
 /** Positive reinforcement **/
 function reinforce(){
   if (parseInt(numbCorrect) == 3){
-    setTimeout(flirt, 2000)
+    setTimeout(flirt, 6000)
   } else {
     setTimeout(chatGF, 5500)
   }
