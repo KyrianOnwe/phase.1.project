@@ -66,6 +66,17 @@ function chatBox(submission){
 
 }
 
+function chatCheck(submission){
+  let jack = submission
+  let jill = testData[questNumb].answer
+  if (jack == jill){
+    return numbCorrect = parseInt(numbCorrect) + 1
+  } else {
+    return numbIncorr = parseInt(numbIncorr) + 1
+  }
+
+}
+
 
 /** Renderers **/
 const renderHome = () => {
@@ -128,6 +139,10 @@ function handleResponse(){
   let handler = document.getElementById("submit");
   handler.addEventListener('click', (e) => {
     e.preventDefault();
+    let retort = document.getElementById('response-bar').value;
+    chatBox(retort);
+    chatCheck(retort);
+
   })
 }
 
