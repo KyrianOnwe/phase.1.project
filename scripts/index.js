@@ -31,10 +31,8 @@ const homePageTemp = () => {
   </div>
   `
 }
-    //TEST
-const testPageTemp = () => {
-  return ``
-}
+
+
 const studyPageTemp = () => {
   return `
     <div class="container row">
