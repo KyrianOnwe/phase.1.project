@@ -177,7 +177,8 @@ function handleResponse(){
     chatInputReset();
     chatQuestUpd();
     showScore();
-    setTimeout(chatGF, 7500);
+    //setTimeout(chatGF, 7500);
+    reinforce();
   })
 }
 
@@ -193,6 +194,12 @@ function getData(){
 function writeDataTable(pic){
   let listCopy = [pic, ...testData];
   return testData = listCopy[0];
+}
+
+
+/** Positive reinforcement **/
+function reinforce(){
+  setTimeout(chatGF, 5500)
 }
 
 /**********************************/
