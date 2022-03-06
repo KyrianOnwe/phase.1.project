@@ -119,6 +119,21 @@ function initialChatGF(){
 document.querySelector("#row2").appendChild(igf);
 }
 
+function chatGF(current= questNumb, array = testData){
+  
+  let gF = document.createElement('div')
+  gF.className = 'col s6 m6';
+  gF.innerHTML = `
+  <div class="card white">
+   <div class="card-content white-text">
+     <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span> ${array[current].question}</p>
+   </div>
+  </div>
+  `
+  
+  document.querySelector("#row2").appendChild(gF);
+}
+
 
 const renderAnatPg = () => {
   mainDiv().innerHTML = ''
