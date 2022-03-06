@@ -77,6 +77,9 @@ function chatCheck(submission){
 
 }
 
+function chatQuestUpd(){
+  return questNumb = parseInt(questNumb) + 1
+}
 
 /** Renderers **/
 const renderHome = () => {
