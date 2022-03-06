@@ -173,7 +173,6 @@ function handleResponse(){
     chatInputReset();
     chatQuestUpd();
     showScore();
-    //setTimeout(chatGF, 7500);
     reinforce();
   })
 }
@@ -196,8 +195,7 @@ function writeDataTable(pic){
 /** Positive reinforcement **/
 function reinforce(){
   if (parseInt(numbCorrect) == 3){
-    //setTimeout(flirt, 2000)
-    setTimeout(chatGF, 7500)
+    setTimeout(flirt, 2000)
   } else {
     setTimeout(chatGF, 5500)
   }
