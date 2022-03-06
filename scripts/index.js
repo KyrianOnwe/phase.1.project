@@ -199,7 +199,25 @@ function writeDataTable(pic){
 
 /** Positive reinforcement **/
 function reinforce(){
-  setTimeout(chatGF, 5500)
+  if (parseInt(numbCorrect) == 3){
+    setTimeout(flirt, 2000)
+    setTimeout(chatGF, 7500)
+  } else {
+    setTimeout(chatGF, 5500)
+  }
 }
 
+function flirt(){
+  let igf = document.createElement('div')
+  igf.className = 'col s6 m6';
+  igf.innerHTML = `
+  <div class="card white">
+  <div class="card-content white-text">
+    <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span>Big brains are SO SEXY!</p>
+  </div>
+  </div>
+  `
+document.querySelector("#row2").appendChild(igf);
+
+}
 /**********************************/
