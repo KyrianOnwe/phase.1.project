@@ -92,6 +92,13 @@ function sayScore(){
   `
 }
 
+function showScore(){
+  let score = () => document.querySelector('#scoreboard');
+  return score().innerHTML = sayScore()
+
+}
+
+
 
 /** Renderers **/
 const renderHome = () => {
@@ -154,6 +161,7 @@ function handleResponse(){
     chatCheck(retort);
     chatInputReset();
     chatQuestUpd();
+    showScore();
 
 
 
