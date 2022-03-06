@@ -77,6 +77,7 @@ const renderAnatPg = () => {
   mainDiv().innerHTML = ''
   mainDiv().className = 'row'
   mainDiv().innerHTML = studyPageTemp();
+  setTimeout(initialChatGF, 2500)
   handleResponse()
 
 }
