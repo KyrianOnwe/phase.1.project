@@ -146,6 +146,8 @@ function handleResponse(){
     chatBox(retort);
     chatCheck(retort);
     chatInputReset();
+    chatQuestUpd();
+
 
 
   })
