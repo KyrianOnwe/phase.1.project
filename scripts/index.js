@@ -185,7 +185,9 @@ function handleResponse(){
 
 /** Server calls **/
 function getData(){
-  
+  fetch(`${baseUrl}/challenge`)
+  .then(res => res.json())
+  .then(data => writeDataTable(data))  
 }
 
 /**********************************/
