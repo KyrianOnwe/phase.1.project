@@ -35,25 +35,21 @@ const homePageTemp = () => {
 
 const studyPageTemp = () => {
   return `
-    <div class="container row">
-      <div class="container col s3">
-        <form action="/action_page.php" id="response-submit">
-          <label for="lname">The response:</label><br>
-          <input type="text" id="lname" name="lname" value=""><br><br>
-          <input type="submit" value="Submit">
-        </form>
+      <div class="col s3 green" style="height: 600px" id="scoreboard">
       </div>
-      <div class="col s4 teal lighten-5">
-      </div>
-      
-      <div class="col s5 teal lighten-5">
-        <div class="container" id="question-side">
-            <h1>Hi There</h1>
+      <div class="col s9 blue lighten-3" style="height: 600px id="question-side">
+        <div style="height: 550px; overflow: auto; overflow-x: hidden;">
+          <div class="row" id="row2">
+          </div>
         </div>
+        <form class="valign-wrapper">
+          <input type="text" name="" id="response-bar" class="valign-bottom white">
+          <button class="btn" id="submit">Submit</button>
+        </form>
+        </div>
+       </div>
       </div>
-    </div>
-    
-  `
+      `
 }
 
 
