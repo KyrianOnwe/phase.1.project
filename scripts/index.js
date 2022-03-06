@@ -85,6 +85,13 @@ function chatInputReset(){
   document.getElementById('response-bar').value = null;
 }
 
+function sayScore(){
+  let lenth = testData.length - 1
+  return `
+  <h4>${numbCorrect} of ${lenth} correct</h4>
+  `
+}
+
 
 /** Renderers **/
 const renderHome = () => {
