@@ -177,7 +177,7 @@ function handleResponse(){
     chatInputReset();
     chatQuestUpd();
     showScore();
-    chatGF()
+    setTimeout(chatGF, 7500);
 
 
 
