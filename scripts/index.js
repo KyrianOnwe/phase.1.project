@@ -131,12 +131,7 @@ function homePageJump(){
   })
 
 }
-function testPageJump(){
-  testPg().addEventListener('click', (e) => {
-    testRenderHome();
 
-  })
-}
 function anatPgJump(){
   anatPg().addEventListener('click', () => {
     renderAnatPg();
