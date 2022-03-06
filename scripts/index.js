@@ -58,6 +58,7 @@ const renderHome = () => {
   mainDiv().innerHTML = homePageTemp();
 }
 
+/** This is how she will ask questions **/
 function initialChatGF(){
   let igf = document.createElement('div')
   igf.className = 'col s6 m6';
@@ -73,6 +74,8 @@ document.querySelector("#row2").appendChild(igf);
 
 
 const renderAnatPg = () => {
+  mainDiv().innerHTML = ''
+  mainDiv().className = 'row'
   mainDiv().innerHTML = studyPageTemp();
   interject();
   handleResponse()
