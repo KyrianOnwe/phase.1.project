@@ -81,6 +81,11 @@ function chatQuestUpd(){
   return questNumb = parseInt(questNumb) + 1
 }
 
+function chatInputReset(){
+  document.getElementById('response-bar').value = null;
+}
+
+
 /** Renderers **/
 const renderHome = () => {
   mainDiv().innerHTML = homePageTemp();
