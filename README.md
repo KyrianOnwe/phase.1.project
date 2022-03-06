@@ -2,17 +2,18 @@
 
 
 ### Overview:
-An application that has a little personality! You can create questions for studying. Conversation with tutoring. Score at the end of the questions.
+An application that has a little personality! You can create questions for studying. Conversation with tutoring. Score kept throughout the interaction
 
 
 
 ### Features:
-* Create Questions (Submit Form)
-* Answer Questions (Submit Form)
-* Load Questions (DOMContentLoaded)
-* Button to accept AI statement (click)
-* Positive Reinforcement
-* Score at the end of the Questions
+* Poses open form questions in a conversational tone.
+* Offers affectionate teasing.
+* Responsive to interaction and consistent positive feedback
 
 
 ### How to use:
+1. Copy and clone the directory to your local repository. 
+2. Run the db.json file, found in the db folder.
+3. Drag the index.html file into your web browser.
+4. Enjoy!
