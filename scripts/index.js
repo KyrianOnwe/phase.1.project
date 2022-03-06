@@ -6,10 +6,13 @@ var questNumb = 0;
 var numbIncorr = 0;
 
 
+
 /** Node Getters **/
 const mainDiv = () => document.getElementById("main") ;
 const homePg = () => document.getElementById('home-page-link');
 const anatPg = () => document.getElementById('anatomy-page-link');
+
+
 
 /** Templates **/
 const homePageTemp = () => {
@@ -31,7 +34,6 @@ const homePageTemp = () => {
   </div>
   `
 }
-
 
 const studyPageTemp = () => {
   return `
@@ -132,14 +134,12 @@ function chatGF(current= questNumb, array = testData){
   document.querySelector("#row2").appendChild(gF);
 }
 
-
 const renderAnatPg = () => {
   mainDiv().innerHTML = ''
   mainDiv().className = 'row'
   mainDiv().innerHTML = studyPageTemp();
   setTimeout(initialChatGF, 2500)
   handleResponse()
-
 }
 
 /** When DOM is loaded **/
@@ -150,13 +150,11 @@ document.addEventListener('DOMContentLoaded', () => {
   anatPgJump();
 })
 
-
 /** Events **/
 function homePageJump(){
   homePg().addEventListener('click', (e)=>{
     renderHome();
   })
-
 }
 
 function anatPgJump(){
