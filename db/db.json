@@ -1,0 +1,80 @@
+{
+    "challenge": [
+        {
+            "id": "0",
+            "question": "Are you ready?",
+            "answer": "gobstoppers!",
+            "pic": ""
+        },
+        {
+            "id": "1",
+            "question": "What is the organ that takes 20% of energy of the body?",
+            "answer": "the brain",
+            "pic": ""
+
+        },
+        {
+            "id": "2",
+            "question": "Using javascript, in order to change what a user is viewing, what do you need to manipulate?",
+            "answer": "DOM",
+            "pic": ""
+
+        },
+        {
+            "id": "3",
+            "question": "What is 2 raised to 4?",
+            "answer": "16",
+            "pic": ""
+
+        },
+        {
+            "id": "4",
+            "question": "What is the most well known equation?",
+            "answer": "E=MC^2",
+            "pic": ""
+
+        },
+        {
+            "id": "5",
+            "question": "What is the most fundamental building block of matter?",
+            "answer": "atom",
+            "pic": ""
+
+        },
+        {
+            "id": "6",
+            "question": "Is programming fun?",
+            "answer": "yes",
+            "pic": ""
+
+        },
+        {
+            "id": "7",
+            "question": "How many chambers in a human heart?",
+            "answer": "4",
+            "pic": ""
+
+        },
+        {
+            "id": "8",
+            "question": "At what point in the cell cycle does crossover take place",
+            "answer": "meiosis",
+            "pic": ""
+
+        },
+        {
+            "id": "9",
+            "question": "How many nickels in a dollar?",
+            "answer": "20",
+            "pic": ""
+
+        },
+        {
+            "id": "10",
+            "question": "What is a meteor in the atmosphere called?",
+            "answer": "meteorite",
+            "pic": ""
+
+        }
+    ]
+}
