@@ -1,9 +1,9 @@
 /** Globals **/
 const baseUrl = 'http://localhost:3000';
 let testData = [];
-var numbCorrect = 0;
-var questNumb = 0;
-var numbIncorr = 0;
+let numbCorrect = 0;
+let questNumb = 0;
+let numbIncorr = 0;
 
 
 
@@ -122,7 +122,7 @@ function initialChatGF(){
   igf.innerHTML = `
   <div class="card white">
   <div class="card-content white-text">
-    <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span>Are you ready?</p>
+    <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says: </span>Hi there, handsome!  Are you ready?</p>
   </div>
   </div>
   `
@@ -184,12 +184,7 @@ function handleResponse(){
 function getData(){
   fetch(`${baseUrl}/challenge`)
   .then(res => res.json())
-  .then(data => writeDataTable(data))  
-}
-
-function writeDataTable(pic){
-  let listCopy = [pic, ...testData];
-  return testData = listCopy[0];
+  .then(data => testData = data)  
 }
 
 
@@ -208,7 +203,7 @@ function flirt(current= questNumb, array = testData){
   gF.innerHTML = `
   <div class="card white">
    <div class="card-content white-text">
-     <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span>Big brains are SO hot!  Let's keep going: ${array[current].question}</p>
+     <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Coco Says: </span>Big brains are SO hot!  Let's keep going: ${array[current].question}</p>
    </div>
   </div>
   `
