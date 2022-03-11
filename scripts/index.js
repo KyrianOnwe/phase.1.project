@@ -44,9 +44,9 @@ const studyPageTemp = () => {
           <div class="row" id="row2">
           </div>
         </div>
-        <form class="valign-wrapper">
-          <input type="text" name="" id="response-bar" class="valign-bottom white">
-          <button class="btn" id="submit">Submit</button>
+        <form class="valign-wrapper" id="submit">
+          <input type="text" name="" id="response-bar" class="valign-bottom white"/>
+          <input type="submit" class="btn" />
         </form>
         </div>
        </div>
@@ -166,7 +166,7 @@ function anatPgJump(){
 
 function handleResponse(){
   let handler = document.getElementById("submit");
-  handler.addEventListener('click', (e) => {
+  handler.addEventListener("submit", (e) => {
     e.preventDefault();
     let retort = document.getElementById('response-bar').value;
     chatBox(retort);
