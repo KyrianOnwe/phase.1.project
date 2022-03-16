@@ -37,7 +37,9 @@ const homePageTemp = () => {
 
 const studyPageTemp = () => {
   return `
-      <div class="col s3 green" style="height: 600px" id="scoreboard">
+      <div class="col s3 green" style="height: 600px" id="scoreboard1">
+        <button id="colorize">Colorize</button>
+        <div id="scoreboard"></div>
       </div>
       <div class="col s9 blue lighten-3" style="height: 600px id="question-side">
         <div style="height: 550px; overflow: auto; overflow-x: hidden;">
@@ -52,6 +54,7 @@ const studyPageTemp = () => {
        </div>
       </div>
       `
+      
 }
 
 function chatBox(submission){
@@ -59,8 +62,8 @@ function chatBox(submission){
   chatSham.className = "col offset-s6 offset-m6 s6 m6"
   chatSham.innerHTML = `
   <div class="card grey lighten-1">
-    <div class="card-content white-text">
-      <p class="blue-text text-darken-1" style="line-height: 18px;"><span class="black-text">We Say:</span> ${submission}</p>
+    <div class="card-content grey-text">
+      <p style="line-height: 18px;"><span>We Say:</span> ${submission}</p>
     </div>
   </div>
   `
@@ -100,7 +103,13 @@ function showScore(){
 
 }
 
-
+/*function colors(){
+  let colorizeIt = document.createElement('button')
+  colorizeIt.innerHTML = "Colorize"
+  let theNav = document.querySelector('#anatomy-page-link');
+  theNav.appendChild(colorizeIt)
+}
+*/
 
 /** Renderers **/
 const renderHome = () => {
@@ -113,6 +122,18 @@ const renderAnatPg = () => {
   mainDiv().innerHTML = studyPageTemp();
   setTimeout(initialChatGF, 2500)
   handleResponse()
+  //colors();
+  colorize();
+}
+
+//create eventlistener for button to call when page loads:
+function colorize(){
+  document.getElementById('colorize').addEventListener('click', () => {
+    let palette = document.querySelectorAll('p');
+    palette.forEach (function(e){//debugger;
+      e.style.color = "#" + Math.floor(Math.random()*16777215).toString(16)
+})
+  })
 }
 
 /** This is how she will ask questions **/
@@ -121,8 +142,8 @@ function initialChatGF(){
   igf.className = 'col s6 m6';
   igf.innerHTML = `
   <div class="card white">
-  <div class="card-content white-text">
-    <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says: </span>Hi there, handsome!  Are you ready?</p>
+  <div class="card-content pink-text">
+    <p style="line-height: 18px;"><span style=color:"black">Computer Says: </span>Hi there, handsome!  Are you ready?</p>
   </div>
   </div>
   `
@@ -134,8 +155,8 @@ function chatGF(current= questNumb, array = testData){
   gF.className = 'col s6 m6';
   gF.innerHTML = `
   <div class="card white">
-   <div class="card-content white-text">
-     <p class="grey-text text-darken-4" style="line-height: 18px;"><span class="black-text">Computer Says:</span> ${array[current].question}</p>
+   <div class="card-content pink-text">
+     <p style="line-height: 18px;"><span class="black-text">Computer Says:</span> ${array[current].question}</p>
    </div>
   </div>
   `
@@ -210,3 +231,6 @@ function flirt(current= questNumb, array = testData){
   document.querySelector("#row2").appendChild(gF);
 }
 /**********************************/
+/**Add a button to change color X**/
+//have it avail when open 'study'
+//all chats should be in different color, so everytime a chat is added, we should have a different color
