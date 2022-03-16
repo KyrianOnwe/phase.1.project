@@ -156,7 +156,7 @@ function chatGF(current= questNumb, array = testData){
   gF.innerHTML = `
   <div class="card white">
    <div class="card-content pink-text">
-     <p style="line-height: 18px;"><span class="black-text">Computer Says:</span> ${array[current].question}</p>
+     <p style="line-height: 18px;"><span>Computer Says:</span> ${array[current].question}</p>
    </div>
   </div>
   `
